@@ -8,6 +8,7 @@ class TasksViewModelFactory(private val dao: TaskDAO):ViewModelProvider.Factory 
         if(modelClass.isAssignableFrom(TaskViewModel::class.java)) {
             return TaskViewModel(dao) as T
         }
+
         throw IllegalArgumentException("Unknown ViewModel")
     }
 }
