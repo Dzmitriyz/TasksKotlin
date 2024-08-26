@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$2.3.1")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
 
     implementation ("androidx.core:core-ktx:1.6.0")
     testImplementation(libs.junit)
