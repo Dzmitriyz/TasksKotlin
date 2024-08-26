@@ -15,6 +15,4 @@ class TaskViewModel(val dao:TaskDAO): ViewModel() {
         dao.insert(task)
         }
     }
-
-
 }
