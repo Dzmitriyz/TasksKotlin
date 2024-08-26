@@ -28,7 +28,6 @@ class TaskItemAdapter: RecyclerView.Adapter<TaskItemAdapter.TaskItemViewHolder>(
                 return TaskItemViewHolder(view)
             }
         }
-
     fun bind(item: Task){
         rootView.text = item.taskName
     }
