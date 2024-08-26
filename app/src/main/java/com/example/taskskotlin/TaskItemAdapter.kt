@@ -35,7 +35,6 @@ class TaskItemAdapter: RecyclerView.Adapter<TaskItemAdapter.TaskItemViewHolder>(
         }
     fun bind(item: Task){
         taskName.text = item.taskName
-        taskDone.isChecked = item.taskDone
-    }
+        taskDone.isChecked = item.taskDone }
     }
 }

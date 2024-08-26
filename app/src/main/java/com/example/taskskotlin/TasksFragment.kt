@@ -23,7 +23,6 @@ class TasksFragment : Fragment() {
     ): View? {
         _binding = FragmentTasksBinding.inflate(inflater, container, false)
         val view =binding.root
-
         val application = requireNotNull(this.activity).application
         val dao = TaskDataBase.getInstance(application).taskDAO
         val viewModelFactory = TasksViewModelFactory(dao)

@@ -27,8 +27,5 @@
             android:padding="8dp"
             android:clickable="false"
             android:text="Done"/>
-
     </LinearLayout>
-
-
 </androidx.cardview.widget.CardView>
