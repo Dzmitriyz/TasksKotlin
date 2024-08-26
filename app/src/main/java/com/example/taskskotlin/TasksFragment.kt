@@ -37,7 +37,6 @@ class TasksFragment : Fragment() {
                 adapter.data=it
             }
         })
-
         return view
     }
 
