@@ -2,13 +2,9 @@ package com.example.taskskotlin
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.CheckBox
-import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.taskskotlin.databinding.TaskItemBinding
-import com.example.taskskotlin.generated.callback.OnClickListener
 
 class TaskItemAdapter(val clickListener:(taskId: Long)->Unit)
     : ListAdapter<Task,TaskItemAdapter.TaskItemViewHolder>(TaskDiffItemCallback()){

@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("org.jetbrains.kotlin.kapt")
     id("kotlin-kapt")
+    id("androidx.navigation.safeargs.kotlin")
+
 }
 
 android {
@@ -11,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.taskskotlin"
-        minSdk = 21
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,8 +42,6 @@ android {
 }
 
 dependencies {
-    val room_version = "2.6.0"
-    val lifecycle_version = "2.2.0"
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation (libs.androidx.lifecycle.livedata.ktx)
     implementation (libs.androidx.room.runtime)
@@ -52,11 +52,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$2.3.1")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    implementation ("androidx.recyclerview:recyclerview:1.3.2")
-    implementation ("androidx.core:core-ktx:1.6.0")
-    implementation("androidx.cardview:cardview:1.0.0")
+    implementation(libs.androidx.lifecycle.runtime.ktx) 
+    implementation (libs.androidx.recyclerview)
+    implementation(libs.androidx.cardview)
+    implementation(libs.androidx.navigation.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
